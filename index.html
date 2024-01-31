@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Not Installed</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #message,
+        #openPlayStoreBtn {
+            display: none;
+        }
+        #message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        #openPlayStoreBtn {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function openPlayStore() {
+            // This function does nothing in this example
+            // You can add code here to open the Play Store
+            // For simplicity, I'm leaving it empty.
+        }
+
+        // Delay the visibility after 5 seconds
+        setTimeout(function() {
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('openPlayStoreBtn').style.display = 'block';
+        }, 5000);
+    </script>
+
+    <div id="message">App is not installed</div>
+    <button id="openPlayStoreBtn" onclick="openPlayStore()">Open Play Store</button>
+</body>
+</html>
+
